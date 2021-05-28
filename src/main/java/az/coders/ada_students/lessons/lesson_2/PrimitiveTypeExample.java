@@ -4,6 +4,7 @@ public class PrimitiveTypeExample {
 
     public static void main(String[] args) {
 
+        // change for git
         boolean bol = true;
         byte elem1 = 5;
         short elem2 = 6;
