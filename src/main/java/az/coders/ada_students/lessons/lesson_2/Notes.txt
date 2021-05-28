@@ -1,0 +1,12 @@
+Java Types
+
+8
+============
+1) Byte         [-128 to 127] (1 byte)
+2) Short        [-32,768 to 32,767] (2 byte)
+3) Character    []
+4) Integer      [-2,147,483,648 to 2,147,483,647] (4 bytes)
+5) Double
+6) Float
+7) Long         [-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807] (8 byte)
+8) Boolean      [0, 1] (1 bit)
