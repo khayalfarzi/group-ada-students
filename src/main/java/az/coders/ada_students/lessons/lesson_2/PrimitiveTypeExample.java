@@ -43,5 +43,12 @@ public class PrimitiveTypeExample {
          * short a=4, b=3, c;
          * c=a+b;
          * */
+
+        test();
+    }
+
+    public static void test() {
+        System.out.println("Method calling...");
+        test();
     }
 }
