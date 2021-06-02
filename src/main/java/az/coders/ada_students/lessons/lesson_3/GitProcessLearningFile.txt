@@ -1,0 +1,7 @@
+Github commands :
+
+1) "Add" file or .java file to git
+2) "Commit" commit added files to git
+3) "Push" push committed files to git
+4) "Update" update all git repo for "up to date"
+5) "Pull" get all changed file from git repo
