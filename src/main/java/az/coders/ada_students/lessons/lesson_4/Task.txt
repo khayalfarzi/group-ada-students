@@ -6,3 +6,50 @@ Input the 2nd number: 78
 Input the 3rd number: 87
 Expected Output :
 The greatest: 87
+
+5. Write a Java program that keeps a number from the user and generates an integer between 1 and 7 and displays the name of the weekday.
+
+Test Data
+Input number: 3
+Expected Output :
+Wednesday
+
+7. Write a Java program to find the number of days in a month.
+
+Test Data
+Input a month number: 2
+Input a year: 2016
+Expected Output :
+February 2016 has 29 days
+
+10. Write a program in Java to display the first 10 natural numbers. Go to the editor
+
+Expected Output :
+
+The first 10 natural numbers are:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+11. Write a program in Java to display n terms of natural numbers and their sum. Go to the editor
+
+Test Data
+Input the number: 2
+Expected Output :
+
+Input number:
+2
+The first n natural numbers are :
+2
+1
+2
+The Sum of Natural Number upto n terms :
+23
