@@ -15,6 +15,9 @@ public class Main {
         Shape square = new Square();
         System.out.println("========> For Square <==========");
         square.parseFromSaveString("Square;purple;true;5.0");
+
+        Shape shape = new Circle(12.45, "Red", true);
+        System.out.println(shape.toString());
     }
 //    public static void main(String[] args) {
 //        Shape s1 = new Circle(5.5, "red", false); // Upcast Circle to Shape
