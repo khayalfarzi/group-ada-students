@@ -1,0 +1,67 @@
+16. Write a program in Java to display the pattern like right angle triangle with a number. Go to the editor
+
+Test Data
+Input number of rows : 10
+Expected Output :
+
+1
+12
+123
+1234
+12345
+123456
+1234567
+12345678
+123456789
+12345678910
+
+19. Write a program in Java to make such a pattern like a pyramid with a number which will repeat the number in the same row. Go to the editor
+
+       1
+      2 2
+     3 3 3
+    4 4 4 4
+
+ 20. Write a program in Java to print the Floyd's Triangle. Go to the editor
+
+    Test Data
+    Input number of rows : 5
+    Expected Output :
+
+    Input number of rows :  5
+    1
+    2 3
+    4 5 6
+    7 8 9 10
+    11 12 13 14 15
+    Click me to see the solution
+
+
+29. Write a Java program that reads an positive integer and count the number of digits the number (less than ten billion) has. Go to the editor
+
+Test Data
+Input an integer number less than ten billion: 125463
+Expected Output :
+
+Number of digits in the number: 6
+
+
+30. Write a Java program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, "All numbers are different" if all three numbers are different and "Neither all are equal or different" otherwise. Go to the editor
+
+Test Data
+Input first number: 2564
+Input second number: 3526
+Input third number: 2456
+Expected Output :
+
+All numbers are different
+
+31. Write a program that accepts three numbers from the user and prints "increasing" if the numbers are in increasing order, "decreasing" if the numbers are in decreasing order, and "Neither increasing or decreasing order" otherwise. Go to the editor
+
+Test Data
+Input first number: 1524
+Input second number: 2345
+Input third number: 3321
+Expected Output :
+
+Increasing order
