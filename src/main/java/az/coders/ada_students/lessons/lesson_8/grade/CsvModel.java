@@ -2,7 +2,7 @@ package az.coders.ada_students.lessons.lesson_8.grade;
 
 import java.util.Objects;
 
-public class CsvModel {
+public class CsvModel implements Comparable<CsvModel> {
 
     private String name;
     private String country;
@@ -50,5 +50,15 @@ public class CsvModel {
                 "name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 '}';
+    }
+
+    public void execute() {
+        System.out.println("Executing: " + this.name + "...");
+        System.out.println("Completed!");
+    }
+
+    @Override
+    public int compareTo(CsvModel o) {
+        return 0;
     }
 }

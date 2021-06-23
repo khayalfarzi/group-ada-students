@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class MainThreadExample {
 
+    // This Class working with one main thread and count all Azerbaijan regions
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("D:\\ideaproject\\spring-boot-jwt-without-JPA\\ada-students\\src\\main\\java\\az\\coders\\ada_students\\lessons\\lesson_8\\grade\\world-cities_csv (1).csv");
         Scanner scanner = new Scanner(file);
