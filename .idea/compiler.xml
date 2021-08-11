@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ada-students" />
+        <module name="group-ada-students" />
       </profile>
     </annotationProcessing>
   </component>

@@ -14,5 +14,6 @@ public class Main {
         // We can not get object for Human because of abstraction
 //        Human human = new Human();
 
+        // change
     }
 }
