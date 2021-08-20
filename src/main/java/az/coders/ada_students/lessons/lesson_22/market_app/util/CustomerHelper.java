@@ -2,7 +2,6 @@ package az.coders.ada_students.lessons.lesson_22.market_app.util;
 
 import az.coders.ada_students.lessons.lesson_22.market_app.model.Customer;
 import az.coders.ada_students.lessons.lesson_22.market_app.model.Person;
-import com.sun.tools.javac.util.StringUtils;
 
 public class CustomerHelper {
 
@@ -23,7 +22,6 @@ public class CustomerHelper {
         // Generate randomly and check it is unique or not
         // customer.setId();
         // customer.setCustomerNo();
-
 
         return customer;
     }

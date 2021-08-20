@@ -9,16 +9,21 @@ import java.util.List;
 
 public class ProductHelper {
 
-    public static void initiateProduct(String info) {
+    public static void initiateProduct(String info, Customer customer, Product[] arrP) {
 
         String[] arr = info.split(" ");
+        Product[] products = new Product[10];
 
         for (int i = 0; i < arr.length; i++) {
-            String[] arrP = arr[i].split(",");
 
-            for (Product product : DB.products) {
+            String id = arr[i].split(",")[0];
+            String count = arr[i].split(",")[1];
 
+            for (int j = 0; j < arrP.length; j++) {
+//                if (arrP[i].getId().equals(id))
             }
         }
+
+        customer.setProducts(products);
     }
 }

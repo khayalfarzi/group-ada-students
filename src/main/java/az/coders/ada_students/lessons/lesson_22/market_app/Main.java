@@ -36,6 +36,8 @@ public class Main {
             info = "";
             info = SCANNER.next();
 
+            String[] arr = info.split(" ");
+
 
             openMarket = false;
         }
