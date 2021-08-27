@@ -1,8 +1,7 @@
 package az.coders.ada_students.lessons.lesson_25;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ListSetExample {
 
@@ -31,12 +30,23 @@ public class ListSetExample {
     private static List<Integer> distinctAndSortList(List<Integer> list) {
 
         // create new list as named newList
-        // create fori for list
-        // check if element exist newList
-        // if exist then do nothing
-        // if not exist then add element to newList
+        List<Integer> newList = new ArrayList<>();
 
-        return null;
+        // create fori for list
+        for (int elem : list) {
+
+            // check if element exist newList
+            if (!newList.contains(elem))
+                // if not exist then add element to newList
+                newList.add(elem);
+            // if exist then do nothing
+        }
+
+        return newList.stream().sorted().collect(Collectors.toList());
+    }
+
+    private static List<Integer> distinctAndSortListWithSet(List<Integer> list) {
+        return new ArrayList<>(new HashSet<Integer>(list));
     }
 
     public static void print(List<Integer> ints) {
