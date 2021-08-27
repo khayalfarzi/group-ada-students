@@ -8,7 +8,11 @@ public class ListSetExample {
 
     public static void main(String[] args) {
 
-        List<Integer> ints = generateRandomList(1000, 500);
+        print(
+                distinctAndSortList(
+                        generateRandomList(1000, 500)
+                )
+        );
 
     }
 
@@ -22,5 +26,14 @@ public class ListSetExample {
         }
 
         return randomIntegers;
+    }
+
+    private static List<Integer> distinctAndSortList(List<Integer> list) {
+
+
+    }
+
+    private static void print(List<Integer> ints) {
+        ints.forEach(System.out::println);
     }
 }
