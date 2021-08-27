@@ -19,10 +19,10 @@ public class ListSetExample {
 
     private static List<Integer> generateRandomList(int bound, int randomBound) {
         List<Integer> randomIntegers = new ArrayList<>();
-        Random random = new Random(randomBound);
+        Random random = new Random();
 
         for (int i = 0; i < bound; i++) {
-            randomIntegers.add(random.nextInt());
+            randomIntegers.add(random.nextInt(randomBound));
         }
 
         return randomIntegers;
@@ -30,7 +30,13 @@ public class ListSetExample {
 
     private static List<Integer> distinctAndSortList(List<Integer> list) {
 
+        // create new list as named newList
+        // create fori for list
+        // check if element exist newList
+        // if exist then do nothing
+        // if not exist then add element to newList
 
+        return null;
     }
 
     private static void print(List<Integer> ints) {
