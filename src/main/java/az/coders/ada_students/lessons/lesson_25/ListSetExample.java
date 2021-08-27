@@ -17,7 +17,7 @@ public class ListSetExample {
     }
 
 
-    private static List<Integer> generateRandomList(int bound, int randomBound) {
+    public static List<Integer> generateRandomList(int bound, int randomBound) {
         List<Integer> randomIntegers = new ArrayList<>();
         Random random = new Random();
 
@@ -39,7 +39,7 @@ public class ListSetExample {
         return null;
     }
 
-    private static void print(List<Integer> ints) {
+    public static void print(List<Integer> ints) {
         ints.forEach(System.out::println);
     }
 }
