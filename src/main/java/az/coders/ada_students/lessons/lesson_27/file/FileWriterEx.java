@@ -7,13 +7,13 @@ import java.util.List;
 
 public class FileWriterEx {
 
-    public static <T> void write(File file, List<T> text) {
+    public static void write(File file, List<String> text) {
         try {
             FileWriter writer = new FileWriter(file);
             text.forEach(
                     txt -> {
                         try {
-                            writer.write((char[]) txt);
+                            writer.write(txt + "\n");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
