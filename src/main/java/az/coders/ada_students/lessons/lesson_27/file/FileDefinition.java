@@ -3,13 +3,10 @@ package az.coders.ada_students.lessons.lesson_27.file;
 import java.io.File;
 import java.io.IOException;
 
-public class FileWriterExample {
+public class FileDefinition {
 
-    public static void main(String[] args) {
-
-        String fileName = "/Applications/idea/group-ada-students/src/main/java/az/coders/ada_students/lessons/lesson_27/file/main.txt";
-
-
+    public static File getFile() {
+        String fileName = "/src/main/java/az/coders/ada_students/lessons/lesson_27/file/main.txt";
         File file = new File(fileName);
 
         if (!file.exists()) {
@@ -20,6 +17,6 @@ public class FileWriterExample {
             }
         }
 
-
+        return file;
     }
 }
