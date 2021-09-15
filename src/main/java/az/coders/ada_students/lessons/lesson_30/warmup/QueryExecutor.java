@@ -16,7 +16,7 @@ public class QueryExecutor {
     }
 
     public void save(Person person) {
-        String values = String.format("%s,%s,%s,%s,%s",
+        String values = String.format("%s,'%s',%s,'%s','%s'",
                 person.getId(),
                 person.getFullName(),
                 person.getAge(),
@@ -33,5 +33,15 @@ public class QueryExecutor {
         }
     }
 
-    // must be written update, delete, get
+    public void update(Person person) {
+
+    }
+
+    public Person get(Integer id) {
+        return null;
+    }
+
+    public void delete(int id) {
+
+    }
 }
