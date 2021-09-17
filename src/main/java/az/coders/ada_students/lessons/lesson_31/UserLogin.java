@@ -51,7 +51,7 @@ public class UserLogin extends JFrame {
      * Create the frame.
      */
     public UserLogin() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setBounds(450, 190, 1014, 597);
         setResizable(false);
         contentPane = new JPanel();
@@ -60,8 +60,8 @@ public class UserLogin extends JFrame {
         contentPane.setLayout(null);
 
         JLabel lblNewLabel = new JLabel("Login");
-        lblNewLabel.setForeground(Color.BLACK);
-        lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+        lblNewLabel.setForeground(Color.CYAN);
+        lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 50));
         lblNewLabel.setBounds(423, 13, 273, 93);
         contentPane.add(lblNewLabel);
 
@@ -98,22 +98,31 @@ public class UserLogin extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String userName = textField.getText();
                 String password = passwordField.getText();
+
+                System.out.println(userName);
+                System.out.println(password);
+
                 try {
-                    Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/swing_demo",
-                            "root", "root");
+                    Connection connection = (Connection) DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+                            "postgres", "error2002");
 
                     PreparedStatement st = (PreparedStatement) connection
-                            .prepareStatement("Select name, password from student where name=? and password=?");
+                            .prepareStatement("Select * from student where name=? and password=?");
 
                     st.setString(1, userName);
                     st.setString(2, password);
                     ResultSet rs = st.executeQuery();
+
                     if (rs.next()) {
                         dispose();
 //                        UserHome ah = new UserHome(userName);
 //                        ah.setTitle("Welcome");
 //                        ah.setVisible(true);
-                        JOptionPane.showMessageDialog(btnNewButton, "You have successfully logged in");
+                        JOptionPane.showMessageDialog(btnNewButton, String.format("You have successfully logged in . \n id : %s \n username: %s \n password: %s \n age: %s",
+                                rs.getInt("id"),
+                                rs.getString("name"),
+                                rs.getString("password"),
+                                rs.getInt("age")));
                     } else {
                         JOptionPane.showMessageDialog(btnNewButton, "Wrong Username & Password");
                     }
